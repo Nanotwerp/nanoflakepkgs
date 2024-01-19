@@ -15,7 +15,7 @@
       });
     in
     {
-      packages.${system}.default = forAllSystems
+      packages.x86_64-linux.default = forAllSystems
         ({ system, pkgs, lib, enableSdl2 }:
           pkgs.clangStdenv.mkDerivation rec {
             pname = "narsil";
